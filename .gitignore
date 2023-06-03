@@ -1,2 +1,5 @@
 # Vim Junk
 *.swp
+
+# Jekyll compile?
+_site
