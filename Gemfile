@@ -8,6 +8,7 @@ source "https://rubygems.org"
 # designed to be used as a gem but expected to be used as a template
 
 gem "jekyll"
+gem 'wdm', '>= 0.1.0' if Gem.win_platform? #To allow monitoring of windows dirs
 
 group :jekyll_plugins do
   gem "jekyll-sitemap"
