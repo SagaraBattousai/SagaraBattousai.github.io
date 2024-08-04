@@ -18,7 +18,7 @@ function generate_header() {
               <img src="assets/images/OniCartoon.png" class="img-fluid icon" alt="Personal Logo">
             </li>
             <li class="nav-item">
-              <a class="nav-link tab ${path == "index.html"? "selected-tab" : ""}" aria-current="page" href="index.html">Active</a>
+              <a class="nav-link tab ${path == "index.html"? "selected-tab" : ""}" aria-current="page" href="index.html">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link tab ${path == "contact_details.html"? "selected-tab" : ""}" tabindex="-1" href="contact_details.html">Contact</a>
