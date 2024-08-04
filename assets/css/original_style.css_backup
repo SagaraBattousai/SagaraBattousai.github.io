@@ -1,4 +1,4 @@
-/*
+
 .navbar-style {
   background-color: var(--gui-background)
 }
@@ -9,7 +9,7 @@ body {
   font-family: 'Libre Baskerville', serif;
   font-weight: 400;
 }
-*/
+
 h1 {
   /* font-size: 2.5rem; */
   font-weight: 700;
@@ -20,7 +20,6 @@ h2 {
   font-weight: 700;
 }
 
-/*
 a {
   color: var(--green);
 }
@@ -67,10 +66,10 @@ hr {
   font-weight: 400;
   font-size: 1rem;
 }
-*/
-/*:root {
+
+:root {
   --night-background: #40403e; /*#323230;*/
-/*  --dark-night-background: #323230;
+  --dark-night-background: #323230;
   --gui-background: #24292E;
   --black: #222F3E;
   --blue: #5f87ff;
@@ -95,4 +94,3 @@ hr {
   --turquoise: #01A3A4;
   --comment: #D7AFFF;
 }
-*/

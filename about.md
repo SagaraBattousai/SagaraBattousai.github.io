@@ -2,7 +2,6 @@
 layout: default
 title: About
 ---
-
 # About page
 
-This is the about page
+This page tells you a little about me.

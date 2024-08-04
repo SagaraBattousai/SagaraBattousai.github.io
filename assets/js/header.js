@@ -15,7 +15,7 @@ function generate_header() {
 
   return `<ul class="nav nav-pills py-3 ps-5 header-bar">
             <li class="nav-item mx-3 mx-md-5">
-              <img src="images/OniCartoon.png" class="img-fluid icon" alt="Personal Logo">
+              <img src="assets/images/OniCartoon.png" class="img-fluid icon" alt="Personal Logo">
             </li>
             <li class="nav-item">
               <a class="nav-link tab ${path == "index.html"? "selected-tab" : ""}" aria-current="page" href="index.html">Active</a>
