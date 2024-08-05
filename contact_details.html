@@ -1,47 +1,26 @@
 ---
+layout: default
+title: Contact Details
+description: Contact Details for James Calo
+author: James Calo
+keywords:
+- Accademic
+- James Calo
+- PhD
 ---
 
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>James Calo</title>
-    <meta charset="UTF-8">
-    <meta name="description" content="About James Calo">
-    <meta name="keywords" content="Accademic James Calo PhD">
-    <meta name="author" content="James Calo">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="{{ '/assets/css/styles.css' | prepend: site.baseurl }}">
-
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap"     rel="stylesheet">
-    <link rel="icon" href="assets/images/OniCartoon.png" />
-
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/jquery.js"></script>
-  </head>
-
-  <body>
-    <div id="header" class="dark-background">
+<div class="container">
+  <div class="row">
+    <div class="col-4 mt-4">
+      <img src="assets/images/Calo.png" class="img-fluid" alt="A Picture Of Me">
     </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-4 mt-4">
-          <img src="assets/images/Calo.png" class="img-fluid" alt="A Picture Of Me">
-        </div>
-        <div class="col-8 mt-4">
-          <h1 style="display:inline;">James Calo</h1>
-          <h2 style="display:inline;">Contact Details</h2>
-          <ul>
-            <li> Academic Email: <a href="mailto:jam414@ic.ac.uk">jam414@ic.ac.uk</a></li>
-            <li> Personal Email: <a href="mailto:jamesafcalo@gmail.com">james@jamescalo.com</a></li>
-            <li> LinkedIn: <a href="https://www.linkedin.com/in/jamescalo/">James Calo</a></li>
-            <li> GitHub: <a href="https://github.com/SagaraBattousai">SagaraBattousai</a></li>
-          </ul>
-        </div>
-      </div>
+    <div class="col-8 mt-4">
+      <h1 style="display:inline;">Contact Details</h1>
+      <ul>
+        {% for item in site.data.contact_details %}
+          <li> {{ item.type }}: <a href="{{ item.link }}">{{ item.text }}</a></li>
+        {% endfor %}
+      </ul>
     </div>
-  </body>
-  <script src="assets/js/header.js"></script>
-</html>
+  </div>
+</div>

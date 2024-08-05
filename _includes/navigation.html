@@ -1,7 +1,35 @@
-<nav>
-  {% for item in site.data.navigation %}
-    <a href="{{ item.link }}" {% if page.url == item.link %}class="current"{% endif %}>
-      {{ item.name }}
-    </a>
-  {% endfor %}
-</nav>
+<div id="header" class="dark-background">
+  <ul class="nav nav-pills py-3 ps-5 header-bar">
+    <li class="nav-item mx-3 mx-md-5">
+      <img src="/assets/images/OniCartoon.png" class="img-fluid icon" alt="Personal Logo">
+    </li>
+    {% for item in site.data.navigation %}
+    <li class="nav-item">
+      <a href="{{ item.link }}" aria-current="page"
+        class="nav-link tab {% if page.url == item.link %} selected-tab{% endif %}">
+        {% comment %} ${path == "index.html"? "selected-tab" : ""}" > {% endcomment %}
+        {{ item.name }}
+      </a>
+    </li>
+    {% endfor %}
+    {% comment %}
+    TODO: Add light dark toggler
+    {% endcomment %}
+  </ul>
+  <hr>
+</div>
+
+
+
+
+{% comment %}
+<li class="nav-item">
+  <a class="nav-link tab ${path == " index.html"? "selected-tab" : "" }" aria-current="page" href="index.html">Home</a>
+</li>
+<li class="nav-item">
+  <a class="nav-link tab ${path == " contact_details.html"? "selected-tab" : "" }" tabindex="-1"
+    href="contact_details.html">Contact</a>
+</li>
+{% endcomment %}
+
+{% comment %} Whats up with tabindex=-1 for contact details? {% endcomment %}

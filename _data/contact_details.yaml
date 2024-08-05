@@ -1,0 +1,15 @@
+- type: Academic Email
+  link: mailto:jam414@ic.ac.uk
+  text: jam414@ic.ac.uk
+
+- type: Personal Email 
+  link: mailto:jamesafcalo@gmail.com 
+  text: james@jamescalo.com
+
+- type: LinkedIn 
+  link: https://www.linkedin.com/in/jamescalo/ 
+  text: James Calo
+
+- type: GitHub 
+  link: https://github.com/SagaraBattousai 
+  text: SagaraBattousai

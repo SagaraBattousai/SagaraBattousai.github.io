@@ -1,35 +1,45 @@
-{% comment %} <!DOCTYPE html> {% endcomment %}
-{% comment %} <html> {% endcomment %}
-{% comment %}   <head> {% endcomment %}
-{% comment %}     <meta chrset="utf-8"> {% endcomment %}
-{% comment %}     <title>{{ page.title }}</title> {% endcomment %}
-{% comment %}     <link rel="stylesheet" href="/assets/css/styles.css"> {% endcomment %}
-
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <title>{{ page.title }}</title>
-    <meta charset="UTF-8">
-    <meta name="description" content="{{ page.description }}">
-    <meta name="author" content="{{ page.author }}">
-    <meta name="keywords" content="{{ page.keywords | join: " " }}">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
-    {% comment %} <link rel="stylesheet" href="{{ '/assets/css/styles.css' | prepend: site.baseurl }}"> {% endcomment %}
-    <link rel="stylesheet" href="/assets/css/styles.css">
+<head>
+  <title>{{ page.title }}</title>
 
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap"     rel="stylesheet">
-    <link rel="icon" href="/assets/images/OniCartoon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="description" content="{{ page.description }}">
+  <meta name="author" content="{{ page.author }}">
+  <meta name="keywords" content="{{ page.keywords | join: " " }}">
 
-    <script src="assets/js/bootstrap.min.js"></script>
-    <script src="assets/js/jquery.js"></script>
-    {% seo %}
-  </head>
-  <body>
-    {% comment %} {% include navigation.html %} {% endcomment %}
-    {{ content }}
-  </body>
+  <!-- Latest compiled and minified CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="/assets/images/OniCartoon.png" />
+  {% seo %}
+</head>
+
+<body>
+  {% include navigation.html %}
+  {{ content }}
+
+  <!-- Placed at the end of the document so the pages load faster -->
+
+  {% comment %}
+  Note: Uncomment if we want dropdowns, popovers or tooltips.
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+
+  {% endcomment %}
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+
+</body>
+
 </html>
