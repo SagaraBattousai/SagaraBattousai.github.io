@@ -1,5 +1,6 @@
 # Vim Junk
 *.swp
+session.vim
 
 Gemfile.lock
 

@@ -6,14 +6,14 @@
     {% for item in site.data.navigation %}
     <li class="nav-item">
       <a href="{{ item.link }}" aria-current="page"
-        class="nav-link tab {% if page.url == item.link %} selected-tab{% endif %}">
-        {% comment %} ${path == "index.html"? "selected-tab" : ""}" > {% endcomment %}
+        class="nav-link tab {% if page.url == item.link %} selected-tab {% endif %}">
         {{ item.name }}
       </a>
     </li>
     {% endfor %}
     {% comment %}
     TODO: Add light dark toggler
+    TODO: ^^ link text now blue instead of geen please revert!
     {% endcomment %}
   </ul>
   <hr>
